@@ -1,0 +1,10 @@
+FROM openjdk:17
+
+COPY target/01_Mini_Project.jar /usr/app/
+
+WORKDIR /usr/app
+
+EXPOSE 8080
+
+ENTRYPOINT ["jar", "-jar", "01_Mini_Project.jar"]
+
